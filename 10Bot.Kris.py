@@ -548,7 +548,7 @@ def mention(to, nama):
     try:
        cl.sendMessage(msg)
     except Exception as error:
-       print error
+       print (error)
 
 def mention2(to, nama):
     aa = ""
@@ -571,7 +571,7 @@ def mention2(to, nama):
     try:
        cl.sendMessage(msg)
     except Exception as error:
-       print error
+       print (error)
 
 def MENTION(to,nama):
     aa = ""
@@ -594,7 +594,7 @@ def MENTION(to,nama):
     try:
       cl.sendMessage(msg)
     except Exception as error:
-       print error
+       print (error)
 
 def sendMessage(self, messageObject):
         return self.Talk.client.sendMessage(0,messageObject)
