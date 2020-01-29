@@ -693,7 +693,7 @@ def sendMessage(to, text, contentMetadata={}, contentType=0):
 
 
 def NOTIFIED_READ_MESSAGE(op):
-    print op
+    print (op)
     try:
         if op.param1 in wait2['readPoint']:
             Name = cl.getContact(op.param2).displayName
@@ -724,7 +724,7 @@ def RECEIVE_MESSAGE(op):
     except KeyboardInterrupt:
 				sys.exit(0)
     except Exception as error:
-        print error
+        print (error)
         print ("\n\nRECEIVE_MESSAGE\n\n")
         return
 
