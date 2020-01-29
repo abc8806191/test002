@@ -678,7 +678,7 @@ def sendAudioWithURL(self, to_, url):
       try:
           self.sendAudio(to_, path)
       except Exception as e:
-        print e
+        print (e)
 
 def post_content(self, urls, data=None, files=None):
         return self._session.post(urls, headers=self._headers, data=data, files=files)       
